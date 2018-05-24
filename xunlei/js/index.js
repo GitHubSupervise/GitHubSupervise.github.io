@@ -136,7 +136,7 @@ webpackJsonp([0], [function(t, e, n) {
 				return e && JSON.parse(e)
 			})
 		}
-		var n = "http://misc.xl9.xunlei.com/res/data/config.json";
+		var n = "https://misc.xl9.xunlei.com/res/data/config.json";
 		t().then(function(t) {
 			t && t.download_link && e("download_link", t.download_link).then(function(t) {
 				t && t.xl9_download && a(".JS-btn-download").attr("href", 'javascript:;')
@@ -187,7 +187,7 @@ webpackJsonp([0], [function(t, e, n) {
 	function send_web_pv() {
 		var t = new Date,
 			e = t.getTime(),
-			n = "http://stat.download.xunlei.com:8099/?xlbtid=" + gOption.xlbtid + "&datatype=pageshow&url=" + url_e + "&ref=" + ref_e + "&useragent=" + userAgent_e + "&userid=" + userid + "&cookieid=" + habo_web_uid + "&sessionid=" + habo_web_sessionid + "&appid=" + gOption.appid + "&r=" + 1e5 * Math.random() + "&time=" + e,
+			n = "https://stat.download.xunlei.com:8099/?xlbtid=" + gOption.xlbtid + "&datatype=pageshow&url=" + url_e + "&ref=" + ref_e + "&useragent=" + userAgent_e + "&userid=" + userid + "&cookieid=" + habo_web_uid + "&sessionid=" + habo_web_sessionid + "&appid=" + gOption.appid + "&r=" + 1e5 * Math.random() + "&time=" + e,
 			i = new Image;
 		i.src = n
 	}
@@ -210,7 +210,7 @@ webpackJsonp([0], [function(t, e, n) {
 				h = t.getAttribute("var3"),
 				c = new Date,
 				d = c.getTime(),
-				p = "http://stat.download.xunlei.com:8099/?xlbtid=" + gOption.xlbtid + "&datatype=click&url=" + url_e + "&useragent=" + userAgent_e + "&userid=" + userid + "&cookieid=" + habo_web_uid + "&sessionid=" + habo_web_sessionid + "&appid=" + gOption.appid + "&clickurl=" + n + "&blockid=" + i + "&clickid=" + o + "&r=" + 1e5 * Math.random() + "&time=" + d + "&eventid=" + a + "&var1=" + s + "&var2=" + r + "&var3=" + h,
+				p = "https://stat.download.xunlei.com:8099/?xlbtid=" + gOption.xlbtid + "&datatype=click&url=" + url_e + "&useragent=" + userAgent_e + "&userid=" + userid + "&cookieid=" + habo_web_uid + "&sessionid=" + habo_web_sessionid + "&appid=" + gOption.appid + "&clickurl=" + n + "&blockid=" + i + "&clickid=" + o + "&r=" + 1e5 * Math.random() + "&time=" + d + "&eventid=" + a + "&var1=" + s + "&var2=" + r + "&var3=" + h,
 				u = new Image;
 			u.src = p, "_self" == target && setTimeout("jumpurl('" + e + "');", 100)
 		}
